@@ -1,0 +1,37 @@
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.nav-link {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link.active {
+    background: linear-gradient(90deg, #10b981, #34d399);
+    color: white;
+    box-shadow: 0 10px 15px -3px rgb(16 185 129);
+}
+
+#clock {
+    transition: all 0.3s ease;
+    letter-spacing: 4px;
+}
+
+.page {
+    animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Toast notification */
+.toast {
+    animation: toastPop 0.3s ease forwards;
+}
+
+@keyframes toastPop {
+    0% { transform: translateY(100px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}

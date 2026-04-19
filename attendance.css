@@ -1,0 +1,11 @@
+#details-modal {
+  display: none;
+}
+
+#details-modal.hidden {
+  display: none;
+}
+
+#details-modal:not(.hidden) {
+  display: flex;
+}
